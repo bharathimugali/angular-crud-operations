@@ -1,0 +1,27 @@
+<div class="container">
+<form #addform="ngForm" (ngSubmit)="OnSubmit(addform.value)">
+<div class="form-group">
+      
+       <input type="hidden" name="ApplicantId"  class="form-control" [(ngModel)]=applicantInfo.applicantId>
+</div>
+<div class="form-group">
+       <label>Enter First Name</label>
+       <input type="text" name="FirstName"  class="form-control" [(ngModel)]=applicantInfo.firstName>
+</div>
+
+<div class="form-group">
+        <label>Enter Last Name</label>
+        <input type="text" name="LastName" class="form-control" [(ngModel)]=applicantInfo.lastName>
+</div>
+
+<div class="form-group">
+        <label>Enter Email id</label>
+        <input type="text" name="Email" class="form-control" [(ngModel)]=applicantInfo.email>
+</div>
+<input type="submit" name="submit" value="submit">
+
+</form>
+
+</div>
+
+
